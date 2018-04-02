@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+#define PI 3.14159265 
+using namespace std;
+main()
+{
+	double a=3.5 , x = -0.7 , y,t;
+	if (a>x)
+	{
+		y = (sin((PI * a*x /180)));
+	}
+	else
+	y = a + log(x+a);
+	
+	if (a>y)
+	t =  (y/(a-x));
+	
+	if (a==y)
+	t = (y/(a-x)) + ((a+x)/y*y);
+	
+	
+	if (a<y)
+	t = tan(a*x) + cos(2*a*y);
+	
+	cout << "a: " << a << "  x: " << x << "   y: " << y << "  t: " << t;
+	
+	return 0;
+}
